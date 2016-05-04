@@ -1,0 +1,27 @@
+{
+	"name" : "navatech/yii2-navatech-base",
+	"description" : "Yii2 Base for navatech application",
+	"type" : "yii2-extension",
+	"keywords" : [
+		"yii2",
+		"extension",
+		"navatech",
+		"base"
+	],
+	"license" : "Apache-2.0",
+	"authors" : [
+		{
+			"name" : "Le Phuong",
+			"email" : "phuong17889@gmail.com"
+		}
+	],
+	"require" : {
+		"yiisoft/yii2" : "*",
+		"yiisoft/yii2-bootstrap" : "*"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"navatech\\base\\" : "src/"
+		}
+	}
+}
