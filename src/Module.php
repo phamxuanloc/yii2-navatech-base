@@ -18,7 +18,7 @@ class Module extends \yii\base\Module {
 	 * @return bool
 	 */
 	public static function hasMultiLanguage() {
-		return class_exists('navatech\\language\\helpers\\MultiLanguageHelpers');
+		return (Yii::$app->hasModule('language') && Yii::$app->getModule('language') instanceof \navatech\language\Module);
 	}
 
 	/**
@@ -26,7 +26,7 @@ class Module extends \yii\base\Module {
 	 * @return bool
 	 */
 	public static function hasSetting() {
-		return class_exists('navatech\\setting\\Module');
+		return (Yii::$app->hasModule('setting') && Yii::$app->getModule('setting') instanceof \navatech\setting\Module && in_array('setting', array_keys(Yii::$app->components)) && Yii::$app->components['setting']['class'] == \navatech\setting\Setting::className());
 	}
 
 	/**
@@ -34,7 +34,7 @@ class Module extends \yii\base\Module {
 	 * @return bool
 	 */
 	public static function hasUserRole() {
-		return class_exists('navatech\\role\\Module');
+		return (Yii::$app->hasModule('role') && Yii::$app->getModule('role') instanceof \navatech\role\Module);
 	}
 
 	/**
