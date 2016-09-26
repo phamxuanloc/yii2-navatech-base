@@ -1,6 +1,7 @@
 <?php
 namespace yii\web;
 
+use navatech\backup\Backup;
 use navatech\setting\Setting;
 use yii\base\Request;
 use yii\base\Response;
@@ -17,6 +18,9 @@ class Application extends \yii\base\Application {
 
 	/**@var Setting return setting components */
 	public $setting;
+
+	/**@var Backup return setting components */
+	public $backup;
 
 	/**
 	 * Handles the specified request.
