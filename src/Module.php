@@ -7,34 +7,34 @@
  * @date    5/4/2016
  * @time    3:43 PM
  */
-namespace navatech\base;
+namespace phamxuanloc\base;
 
 use Yii;
 
 class Module extends \yii\base\Module {
 
 	/**
-	 * Check if has navatech\multilanguage
+	 * Check if has phamxuanloc\multilanguage
 	 * @return bool
 	 */
 	public static function hasMultiLanguage() {
-		return (Yii::$app->hasModule('language') && Yii::$app->getModule('language') instanceof \navatech\language\Module);
+		return (Yii::$app->hasModule('language') && Yii::$app->getModule('language') instanceof \phamxuanloc\language\Module);
 	}
 
 	/**
-	 * Check if has navatech\setting
+	 * Check if has phamxuanloc\setting
 	 * @return bool
 	 */
 	public static function hasSetting() {
-		return (Yii::$app->hasModule('setting') && Yii::$app->getModule('setting') instanceof \navatech\setting\Module && in_array('setting', array_keys(Yii::$app->components)) && Yii::$app->components['setting']['class'] == \navatech\setting\Setting::className());
+		return (Yii::$app->hasModule('setting') && Yii::$app->getModule('setting') instanceof \phamxuanloc\setting\Module && in_array('setting', array_keys(Yii::$app->components)) && Yii::$app->components['setting']['class'] == \phamxuanloc\setting\Setting::className());
 	}
 
 	/**
-	 * Check if has navatech\role
+	 * Check if has phamxuanloc\role
 	 * @return bool
 	 */
 	public static function hasUserRole() {
-		return (Yii::$app->hasModule('role') && Yii::$app->getModule('role') instanceof \navatech\role\Module);
+		return (Yii::$app->hasModule('role') && Yii::$app->getModule('role') instanceof \phamxuanloc\role\Module);
 	}
 
 	/**
