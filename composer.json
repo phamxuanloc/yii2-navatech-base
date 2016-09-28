@@ -1,5 +1,5 @@
 {
-	"name" : "phamxuanloc/yii2-navatech-base",
+	"name" : "phamxuanloc/yii2-phamxuanloc-base",
 	"description" : "Yii2 Base for phamxuanloc application",
 	"type" : "yii2-extension",
 	"keywords" : [
@@ -11,7 +11,7 @@
 	"license" : "MIT",
 	"homepage" : "https://diclearn.com",
 	"support" : {
-		"source" : "https://github.com/phamxuanloc/yii2-navatech-base"
+		"source" : "https://github.com/phamxuanloc/yii2-phamxuanloc-base"
 	},
 	"authors" : [
 		{
